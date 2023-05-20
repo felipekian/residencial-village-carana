@@ -3,6 +3,10 @@
   --color-text-primary: #FFF;
 }
 
+* {
+  font-family: Nunito, Roboto, sans-serif;
+}
+
 .primary-background {
   background: var(--color-primary);
   color: var(--color-text-primary);
