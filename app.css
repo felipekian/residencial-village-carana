@@ -104,7 +104,7 @@ p {
   font-size: 2rem;
 }
 
-span:not('.contato') {
+.custom-span {
   font-size: 1.6rem;
   text-transform: capitalize;
   font-weight: 600;
@@ -116,4 +116,8 @@ li {
 
 .text-justify {
   text-align: justify;
+}
+
+hr {
+  border-color: var(--color-primary);
 }
