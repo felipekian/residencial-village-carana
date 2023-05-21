@@ -1,10 +1,38 @@
-:root{
-  --color-primary:#002c5d;
+:root {
+  --color-primary: #002c5d;
   --color-text-primary: #FFF;
+  --color-bg-body: #FFFFFF
 }
 
 * {
   font-family: Nunito, Roboto, sans-serif;
+}
+
+/********************************
+    Constum Scrollbar
+/********************************/
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--color-primary) var(--color-text-primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-text-primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  border: 3px solid var(--color-text-primary);
+}
+
+body {
+  background: var(--color-bg-body);
 }
 
 .primary-background {
@@ -42,20 +70,12 @@
   transition: 1s;
 }
 
-.carousel-item {
-  height: 70vh;
-}
-.carousel-item > img {
+.carousel-item>img {
   border: 4px solid var(--color-primary);
-  border-radius: 10px;
-  height: 70vh;
-  transition: all 2s;
+  border-radius: 20px;
+  height: 80vh;
 }
 
-.carousel-item > img:hover {
-  transform: scale(1.2);
-  transition: all 2s;
-}
 
 #div-contatos {
   position: relative;
@@ -68,4 +88,32 @@
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   transition: 1s;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 2rem;
+}
+
+span:not('.contato') {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+li {
+  font-size: 1.2rem;
+}
+
+.text-justify {
+  text-align: justify;
 }
