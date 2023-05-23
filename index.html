@@ -7,6 +7,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -22,7 +24,7 @@
 </head>
 
 <body>
-  <header class="shadow">
+  <header class="shadow" data-aos="fade-right">
     <div class="p-5 mb-4 primary-background">
       <div class="container-fluid container-md py-5 zoom-element">
         <h1 style="font-family: 'Days One', sans-serif;">Village Caranã</h1>
@@ -43,7 +45,7 @@
   </header>
 
   <main>
-    <section class="container-fluid container-lg mt-5">
+    <section class="container-fluid container-lg mt-5" data-aos="fade-up">
       <div id="carouselFachadaId" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
           <li data-bs-target="#carouselFachadaId" data-bs-slide-to="0" class="active" aria-current="true"
@@ -82,7 +84,7 @@
       <div class="shadow rounded border my-5 p-5" id="suite">
         <h2 class="text-center mb-5">...Veja o que oferecemos...</h2>
 
-        <section>
+        <section data-aos="fade-up">
           <p><i class="bi bi-star-fill"></i> Uma exelente suíte contendo:</p>
           <span class="custom-span">Quarto:</span>
           <ul>
@@ -155,7 +157,7 @@
 
         <hr class="my-5">
 
-        <section id="cozinha">
+        <section id="cozinha" data-aos="fade-up">
           <p><i class="bi bi-star-fill"></i> Uma cozinha contendo:</p>
           <ul>
             <li>Pia elegante com cuba em inox.</li>
@@ -193,7 +195,7 @@
 
         <hr class="my-5">
 
-        <section id="sala">
+        <section id="sala" data-aos="fade-up">
           <p><i class="bi bi-star-fill"></i> Uma Sala contendo:</p>
           <ul>
             <li>Piso em porcelanato.</li>
@@ -231,7 +233,7 @@
 
         <hr class="my-5">
 
-        <section id="area_servico">
+        <section id="area_servico" data-aos="fade-up">
           <p><i class="bi bi-star-fill"></i> Uma área de serviço:</p>
           <ul>
             <li>Piso em porcelanato.</li>
@@ -242,32 +244,36 @@
 
           <div id="carouselAreaServicoId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
-            <li data-bs-target="#carouselAreaServicoId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-            <li data-bs-target="#carouselAreaServicoId" data-bs-slide-to="1" aria-label="Second slide"></li>
-          </ol>
+              <li data-bs-target="#carouselAreaServicoId" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="First slide"></li>
+              <li data-bs-target="#carouselAreaServicoId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
                 <img src="./assets/images/AP 3-6/area_servico/a1.jpeg" class="w-100 d-block" alt="cozinha"
                   loading="lazy">
               </div>
               <div class="carousel-item">
-              <img src="./assets/images/AP 3-6/area_servico/a2.jpeg" class="w-100 d-block" alt="Second slide" loading="lazy">
+                <img src="./assets/images/AP 3-6/area_servico/a2.jpeg" class="w-100 d-block" alt="Second slide"
+                  loading="lazy">
+              </div>
             </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAreaServicoId" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselAreaServicoId" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAreaServicoId"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAreaServicoId"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
             </button>
           </div>
         </section>
 
         <hr class="my-5">
 
-        <section id="garagem">
+        <section id="garagem" data-aos="fade-up">
           <p><i class="bi bi-star-fill"></i> Garagem:</p>
           <ul>
             <li>Uma vaga para carro.</li>
@@ -304,7 +310,7 @@
 
         <hr class="my-5">
 
-        <section id="vantagens">
+        <section id="vantagens" data-aos="fade-up">
           <p><i class="bi bi-star-fill"></i> Outras vantagens nas proximidades:</p>
           <ul>
             <li>Supermercados.</li>
@@ -319,7 +325,7 @@
       </div>
     </div>
 
-    <div class="container-fluid color-primary-custom pb-5 bg-primary-color" id="contatos">
+    <div class="container-fluid color-primary-custom pb-5 bg-primary-color" id="contatos" data-aos="fade-up">
       <section class="container bg-white rounded border div-shadow shadow p-5" id="div-contatos">
         <div class="row">
           <div class="col-md-4">
@@ -398,6 +404,32 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 80, // offset (in px) from the original trigger point
+      delay: 100, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
 </body>
 
 </html>
