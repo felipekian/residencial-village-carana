@@ -15,6 +15,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Days+One&family=Nunito:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap"
     rel="stylesheet">
@@ -200,7 +202,7 @@
               <div class="carousel-item">
                 <img src="./assets/images/AP 3-6/cozinha/c3.jpg" class="w-100 d-block" alt="cozinha" loading="lazy">
               </div>
-              
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselCozinhaId"
               data-bs-slide="prev">
@@ -215,7 +217,7 @@
           </div>
         </section>
 
-        <hr class="my-5">     
+        <hr class="my-5">
 
         <section id="area_servico" data-aos="fade-up">
           <p><i class="bi bi-star-fill"></i> Uma área de serviço:</p>
@@ -270,10 +272,11 @@
 
           <div id="carouselGaragemId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
-            <li data-bs-target="#carouselGaragemId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-            <li data-bs-target="#carouselGaragemId" data-bs-slide-to="1" aria-label="Second slide"></li>
-            <li data-bs-target="#carouselGaragemId" data-bs-slide-to="2" aria-label="Third slide"></li>
-          </ol>
+              <li data-bs-target="#carouselGaragemId" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="First slide"></li>
+              <li data-bs-target="#carouselGaragemId" data-bs-slide-to="1" aria-label="Second slide"></li>
+              <li data-bs-target="#carouselGaragemId" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
                 <img src="./assets/images/AP 3-6/garagem/g1.jpeg" class="w-100 d-block" alt="cozinha" loading="lazy">
@@ -285,13 +288,15 @@
                 <img src="./assets/images/AP 3-6/garagem/g3.jpg" class="w-100 d-block" alt="cozinha" loading="lazy">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaragemId" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselGaragemId" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaragemId"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselGaragemId"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
             </button>
           </div>
         </section>
@@ -313,7 +318,7 @@
             <li>etc</li>
           </ul>
         </section>
-        
+
         <hr class="my-5">
 
         <section id="vantagens" data-aos="fade-up">
@@ -444,6 +449,35 @@
       anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
     });
+  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script>
+    
+    const TIME_SHOW = (Math.floor(Math.random() * 16) + 5) * 1000;
+
+    toastr.options = {
+      "closeButton": true,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": true,
+      "positionClass": "toast-top-center",
+      "preventDuplicates": false,
+      "showDuration": "300",
+      "hideDuration": "25000",
+      "timeOut": "25000",
+      "extendedTimeOut": "25000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
+    setTimeout(() => {
+      toastr.warning("Uma pessoa acabou de entrar em contato! Não perca tempo envie uma messagem também para o <p style='font-size:18px; margin-top:10px;'><b>whatsapp 95 98100-3833!</b></p> e agende sua visita!");
+    }, TIME_SHOW);
   </script>
 </body>
 
