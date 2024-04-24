@@ -137,3 +137,17 @@ hr {
 .cta_whatsapp:hover {
   text-decoration: underline;
 }
+
+.link_whatsapp_fixed {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+}
+
+.logo_whatsapp {
+  transition: all .5s;
+}
+
+.logo_whatsapp:hover {
+  scale: 1.05;
+}
