@@ -12,7 +12,7 @@
   </script>
   <!-- End Google tag (gtag.js) -->
 
-  <title>Condomínio Village Caranã</title>
+  <title>Condomínio Village Caranã - temos 1 apartamento disponível!</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -41,7 +41,7 @@
     <div class="p-5 mb-4 primary-background">
       <div class="container-fluid container-md py-5 zoom-element">
         <h1 style="font-family: 'Days One', sans-serif;">Condomínio Village Caranã</h1>
-        <a href="https://wa.me/5595981245723?text=Apartamento+caran%C3%A3" target="_blank" class="cta_whatsapp col-md-8 fs-4 text-white" title="Nosso Whatsapp">Clique aqui e agende uma visita agora! temos 1 disponível.</a>
+        <a href="https://wa.me/5595981245723?text=Apartamento+caran%C3%A3" target="_blank" class="cta_whatsapp col-md-8 fs-4 text-white" data-bs-toggle="tooltip" data-bs-title="Clique para agendar uma visita!">Clique aqui e agende uma visita! temos 1 apartamento disponível.</a>
       </div>
 
       <nav class="nav justify-content-center text-color-primary">
@@ -433,19 +433,14 @@
   </main>
   <footer>
     
-    <a href="https://wa.me/5595981245723?text=Apartamento+caran%C3%A3" target="_blank" rel="noopener noreferrer" class="link_whatsapp_fixed" title="Clique para entrar em contato!">
-      <img src="./assets/images/whatsapp/img_logo_whatsapp.png" class="logo_whatsapp" alt="entrar em contato via whatsapp" width="50px">
+    <a href="https://wa.me/5595981245723?text=Apartamento+caran%C3%A3" target="_blank" rel="noopener noreferrer" class="link_whatsapp_fixed">
+      <img src="./assets/images/whatsapp/img_logo_whatsapp.png" class="logo_whatsapp" alt="entrar em contato via whatsapp" width="50px" data-bs-toggle="tooltip" data-bs-title="Clique para entrar em contato pelo Whatsapp!">
     </a>
 
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
@@ -498,8 +493,12 @@
       "hideMethod": "fadeOut"
     }
     setTimeout(() => {
-      toastr.warning("Uma pessoa acabou de entrar em contato! Não perca tempo envie uma messagem também para o <p style='font-size:18px; margin-top:10px;'><b><a href='https://wa.me/5595981245723?text=Apartamento+caran%C3%A3' target='_blank'>whatsapp 95 98100-3833!</a></b></p> e agende sua visita!");
+      toastr.warning("Uma pessoa acabou de entrar em contato! Não perca tempo! <p style='font-size:18px; margin-top:10px;'><b><a href='https://wa.me/5595981003833?text=Apartamento+caran%C3%A3' target='_blank'>clique aqui e agende sua visita!</a></b></p>");
     }, TIME_SHOW);
+  </script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   </script>
 </body>
 
