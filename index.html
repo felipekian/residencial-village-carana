@@ -25,7 +25,7 @@
   </script>
   <!-- End Google tag (gtag.js) -->
 
-  <title>Condomínio Village Caranã - temos 1 apartamento disponível!</title>
+  <title>Condomínio Village Caranã</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -523,8 +523,11 @@
     
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
+    const title = document.querySelector('title');
+    
     if(AP_DISPONIVEL) {
+      
+      title.innerText = 'Condomínio Village Caranã - temos 1 apartamento disponível!'
 
       const TIME_SHOW = (Math.floor(Math.random() * 16) + 5) * 1000;
 
