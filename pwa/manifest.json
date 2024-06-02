@@ -19,10 +19,10 @@
   "display": "standalone",
   "dir": "auto",
   "lang": "pt-BR",
-  "name": "Condomínio Village Caranã",
+  "name": "Residencial Village Caranã",
   "short_name": "Village Caranã",
   "start_url": "https://felipekian.github.io/site_carana/index.html",
   "scope": "https://felipekian.github.io/site_carana/index.html",
-  "description": "Condomínio village caranã venha conhecer, aluguel de apartamentos",
+  "description": "Residencial village caranã venha conhecer, aluguel de apartamentos, condomínio",
   "id": "https://felipekian.github.io/site_carana/index.html"
 }
