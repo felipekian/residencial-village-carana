@@ -47,7 +47,7 @@
 
   <link rel="stylesheet" href="./app.css">
 
-  <link rel="manifest" href="./pwa/manifest.json">
+  <link rel="manifest" id="link_manifest" href="">
 
 </head>
 
@@ -524,8 +524,11 @@
     
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
+    const title = document.querySelector('title');
+    
     if(AP_DISPONIVEL) {
+      
+      title.innerText = 'Condomínio Village Caranã - temos 1 apartamento disponível!'
 
       const TIME_SHOW = (Math.floor(Math.random() * 16) + 5) * 1000;
 
@@ -560,6 +563,17 @@
     
     }
  
+  </script>
+
+  <script type="text/Javascript">
+
+    const userAgent = navigator.userAgent;
+    const iOS = !!userAgent.match(/iPhone|iPad|iPod/);
+    const isAndroid = /android/i.test(userAgent);
+    const link_manifest = document.getElementById('link_manifest');
+      
+    link_manifest.href = (isAndroid || iOS) ? "./pwa/manifest_app.json" : "./pwa/manifest_navegator.json";
+
   </script>
 
 </body>
