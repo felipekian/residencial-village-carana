@@ -499,7 +499,7 @@
 
               <hr>
 
-              <span class="contato text-justify">
+              <span class="contato text-justify" id="endereco">
                 Rua Soldado-Polícia Militar Jacinto José de Santana da Silva, Nº 191, Caranã
               </span>
             </div>
@@ -614,6 +614,8 @@
 
       set_submenu_indisponivel();
       title.innerText = 'Residencial Village Caranã - Sem apartamento disponível!'
+
+      document.querySelector('#contatos').style.display = 'none';
 
     }
 
